@@ -27,6 +27,7 @@ a {
     padding: 0 20px;
 }
 
+/* Анімація появи */
 .reveal {
     opacity: 0;
     transform: translateY(40px);
@@ -111,7 +112,6 @@ nav ul li a:hover {
     color: #2ecc71;
 }
 
-/* Секція Hero */
 .hero {
     background: linear-gradient(-45deg, #1e3c72, #2a5298, #2c3e50, #27ae60);
     background-size: 400% 400%;
@@ -157,7 +157,6 @@ nav ul li a:hover {
     opacity: 0.9;
 }
 
-/* Кнопки */
 .btn {
     display: inline-block;
     background: #2ecc71;
@@ -180,22 +179,11 @@ nav ul li a:hover {
     transform: translateY(-1px);
 }
 
-.btn-small {
-    padding: 8px 20px;
-    font-size: 14px;
-}
-
 /* Секція "Про себе" */
 .about {
     padding: 80px 0;
     background: white;
     text-align: center;
-}
-
-.about-text {
-    max-width: 700px;
-    margin: 0 auto;
-    font-size: 17px;
 }
 
 .section-title {
@@ -246,7 +234,7 @@ nav ul li a:hover {
     box-shadow: 0 5px 15px rgba(22, 160, 133, 0.2);
 }
 
-/* Секція "Проєкти" */
+/* Секція "Проекти" */
 .projects {
     padding: 80px 0;
 }
@@ -310,7 +298,7 @@ nav ul li a:hover {
     flex-grow: 1;
 }
 
-/* Контакти та утиліти */
+/* Контакти */
 .contact {
     background: linear-gradient(135deg, #2c3e50, #1a252f);
     color: white;
@@ -324,14 +312,6 @@ nav ul li a:hover {
     opacity: 0.9;
 }
 
-.white-title {
-    color: white;
-}
-
-.text-center {
-    text-align: center;
-}
-
 footer {
     background: #11171d;
     color: #7f8c8d;
@@ -340,7 +320,6 @@ footer {
     font-size: 14px;
 }
 
-/* Адаптивність */
 @media (max-width: 768px) {
     header .container {
         flex-direction: column;
