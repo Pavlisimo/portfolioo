@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <!-- СТАЛО (правильно работает везде): -->
-<link rel="stylesheet" href="./css/style.css">
-<script src="./js/main.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моє Портфоліо | Павло</title>
-    <!-- Підключення зовнішніх стилів -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -36,7 +32,7 @@
     <section id="about" class="about reveal">
         <div class="container">
             <h2 class="section-title">Про себе</h2>
-            <p class="about-text">
+            <p style="max-width: 700px; margin: 0 auto; font-size: 17px;">
                 Я займаюся створенням сучасних, адаптивних та зручних веб-інтерфейсів. Люблю чистий код, продуманий дизайн та увагу до деталей.
             </p>
             <div class="skills">
@@ -51,8 +47,9 @@
 
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title reveal text-center">Проекти</h2>
+            <h2 class="section-title reveal" style="text-align: center;">Проекти</h2>
             <div class="project-grid">
+                
                 <!-- Карточка 1 -->
                 <div class="project-card reveal">
                     <div class="project-img-wrapper">
@@ -62,94 +59,99 @@
                         <h3>Сайт-візитка</h3>
                         <p>Адаптивний лендинг для локального бізнесу із сучасним дизайном та високою швидкістю завантаження.</p>
                         <div>
-                            <a href="https://codepen.io/Margarita-the-solid/pen/qEadERd" class="btn btn-small">Докладніше</a>
+                            <a href="https://codepen.io/Margarita-the-solid/pen/qEadERd" target="_blank" class="btn" style="padding: 8px 20px; font-size: 14px;">Докладніше</a>
                         </div>
                     </div>
                 </div>
+
                 <!-- Карточка 2 -->
                 <div class="project-card reveal">
                     <div class="project-img-wrapper">
-                        <img src="https://picsum.photos/600/400?random=2" alt="Анімації для сайтів прев'ю" class="project-img">
+                        <img src="https://picsum.photos/600/400?random=2" alt="Анімації прев'ю" class="project-img">
                     </div>
                     <div class="project-info">
                         <h3>Анімації для сайтів</h3>
                         <p>Інтерфейс з динамічною анімацією на чистому JS.</p>
                         <div>
-                            <a href="https://codepen.io/VoXelo/pen/VYKMNwE" class="btn btn-small">Докладніше</a>
+                            <a href="https://codepen.io/VoXelo/pen/VYKMNwE" target="_blank" class="btn" style="padding: 8px 20px; font-size: 14px;">Докладніше</a>
                         </div>
                     </div>
                 </div>
+
                 <!-- Карточка 3 -->
                 <div class="project-card reveal">
                     <div class="project-img-wrapper">
-                        <img src="https://picsum.photos/600/400?random=3" alt="Анімація світіння екрану прев'ю" class="project-img">
+                        <img src="https://picsum.photos/600/400?random=3" alt="Світіння екрану прев'ю" class="project-img">
                     </div>
                     <div class="project-info">
-                        <h3>Анімація світіння екрану монітора</h3>
-                        <p>Інтерфейс з динамічним світінням на чистому HTML CSS JS.</p>
+                        <h3>Анімація світіння монітора</h3>
+                        <p>Інтерфейс з динамічним світінням на чистому HTML, CSS та JS.</p>
                         <div>
-                            <a href="https://codepen.io/toi-nagasawa/pen/OPRBwOd" class="btn btn-small">Докладніше</a>
+                            <a href="https://codepen.io/toi-nagasawa/pen/OPRBwOd" target="_blank" class="btn" style="padding: 8px 20px; font-size: 14px;">Докладніше</a>
                         </div>
                     </div>
                 </div>
+
                 <!-- Карточка 4 -->
                 <div class="project-card reveal">
                     <div class="project-img-wrapper">
                         <img src="https://picsum.photos/600/400?random=4" alt="Гра аерохокей прев'ю" class="project-img">
                     </div>
                     <div class="project-info">
-                        <h3>Гра на HTML CSS JS</h3>
-                        <p>Гра про аерохокей з великим функціоналом.</p>
+                        <h3>Гра на HTML/CSS/JS</h3>
+                        <p>Гра про аерохокей з великим та цікавим функціоналом.</p>
                         <div>
-                            <a href="https://codepen.io/matt-cannon/pen/yyVLNNj" class="btn btn-small">Докладніше</a>
+                            <a href="https://codepen.io/matt-cannon/pen/yyVLNNj" target="_blank" class="btn" style="padding: 8px 20px; font-size: 14px;">Докладніше</a>
                         </div>
                     </div>
                 </div>
+
                 <!-- Карточка 5 -->
                 <div class="project-card reveal">
                     <div class="project-img-wrapper">
-                        <img src="https://picsum.photos/600/400?random=5" alt="Анімація з привітанням прев'ю" class="project-img">
+                        <img src="https://picsum.photos/600/400?random=5" alt="Анімація з піском прев'ю" class="project-img">
                     </div>
                     <div class="project-info">
                         <h3>Анімація з привітанням</h3>
-                        <p>Анімація з привітанням, яке збирається з піску на пляжі.</p>
+                        <p>Анімація з привітанням, яке реалістично збирається з піску на пляжі.</p>
                         <div>
-                            <a href="https://codepen.io/dustindwayne/pen/qEqzrzo" class="btn btn-small">Докладніше</a>
+                            <a href="https://codepen.io/dustindwayne/pen/qEqzrzo" target="_blank" class="btn" style="padding: 8px 20px; font-size: 14px;">Докладніше</a>
                         </div>
                     </div>
                 </div>
+
                 <!-- Карточка 6 -->
                 <div class="project-card reveal">
                     <div class="project-img-wrapper">
-                        <img src="https://picsum.photos/600/400?random=6" alt="Анімація дня і ночі прев'ю" class="project-img">
+                        <img src="https://picsum.photos/600/400?random=6" alt="Зміна дня і ночі прев'ю" class="project-img">
                     </div>
                     <div class="project-info">
-                        <h3>Анімація зі зміною дня і ночі</h3>
-                        <p>Анімація зі зміною дня і ночі на палубі корабля, і чітко вираженими елементами сонця та місяця.</p>
+                        <h3>Зміна дня і ночі</h3>
+                        <p>Анімація зі зміною дня і ночі на палубі корабля з чітко вираженими сонцем та місяцем.</p>
                         <div>
-                            <a href="https://codepen.io/HighFlyer910/pen/OPWgGMK" class="btn btn-small">Докладніше</a>
+                            <a href="https://codepen.io/HighFlyer910/pen/OPWgGMK" target="_blank" class="btn" style="padding: 8px 20px; font-size: 14px;">Докладніше</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+
+            </div> <!-- Закрили project-grid -->
+        </div> <!-- Закрили container -->
     </section>
 
     <section id="contact" class="contact reveal">
         <div class="container">
-            <h2 class="section-title white-title">Контакти</h2>
-            <p>Буду радий обговорити ваші ідеї та проекти. Напишіть мені на Telegram/Viber/WhatsApp за номером +380-50-253-09-64</p>
+            <h2 class="section-title" style="color: white;">Контакти</h2>
+            <p>Буду радий обговорити ваші ідеї та проекти. Напишіть мені у Telegram / Viber / WhatsApp за номером +380-50-253-09-64</p>
             <a href="mailto:karadzelipavel6@gmail.com" class="btn">Написати на email</a>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Portfolio. Всі права захищені.</p>
+            <p>&copy; 2026 Portfolio. Всі права захищено.</p>
         </div>
     </footer>
 
-    <!-- Підключення зовнішнього скрипта -->
     <script src="script.js"></script>
 </body>
 </html>
