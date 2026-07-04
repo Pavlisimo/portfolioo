@@ -1,4 +1,4 @@
-// Зміна стилю шапки при скролі
+// Тінь для шапки при скролі
 window.addEventListener('scroll', () => {
     const header = document.getElementById('header');
     if (window.scrollY > 50) {
@@ -8,20 +8,21 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Налаштування IntersectionObserver для анімації появи елементів
+// Плавна поява елементів при скролі
 const observerOptions = {
-    threshold: 0.15
+    threshold: 0.1
 };
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('active');
+            // Відключаємо спостереження після появи, щоб анімація спрацювала один раз
+            observer.unobserve(entry.target);
         }
     });
 }, observerOptions);
 
-// Запуск спостереження за всіма елементами з класом .reveal
 document.querySelectorAll('.reveal').forEach(el => {
     observer.observe(el);
 });
