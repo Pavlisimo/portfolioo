@@ -3,156 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моє Портфоліо | Павло</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Павло | Warm Premium Portfolio</title>
+    <!-- Іконки FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Підключення зовнішніх стилів -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Елементи Оновленого Курсору -->
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="custom-cursor-follower" id="follower"></div>
+
     <header id="header">
         <div class="container">
-            <div class="logo">Portfolio</div>
+            <div class="logo">PAVLO.DEV</div>
             <nav>
                 <ul>
-                    <li><a href="#about">Про себе</a></li>
-                    <li><a href="#projects">Проекти</a></li>
-                    <li><a href="#contact">Контакти</a></li>
+                    <li><a href="#about" class="nav-link">Про себе</a></li>
+                    <li><a href="#projects" class="nav-link">Проекти</a></li>
+                    <li><a href="#contact" class="nav-link">Контакти</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <section class="hero">
-        <div class="container hero-content">
-            <h1>Привіт, мене звати Павло</h1>
-            <p>Frontend-розробник / Веб-дизайнер</p>
-            <a href="#projects" class="btn">Подивитися роботи</a>
+        <div class="bg-glow-1"></div>
+        <div class="bg-glow-2"></div>
+        <div class="container hero-container">
+            <h1>Створюю <span>Цифрове Майбутнє</span></h1>
+            <p>Frontend Developer & UI/UX Visionary</p>
+            <a href="#projects" class="btn">Дослідити проекти</a>
         </div>
     </section>
 
     <section id="about" class="about reveal">
         <div class="container">
-            <h2 class="section-title">Про себе</h2>
-            <p style="max-width: 700px; margin: 0 auto; font-size: 17px;">
-                Я займаюся створенням сучасних, адаптивних та зручних веб-інтерфейсів. Люблю чистий код, продуманий дизайн та увагу до деталей.
+            <h2 class="section-title"><span>01.</span> Про себе</h2>
+            <p class="about-text">
+                Я спеціалізуюся на розробці високопродуктивних, чуйних та інтерактивних веб-додатків. Поєднуючи логіку програмування із сучасними трендами дизайну, я створюю інтерфейси, які залучають з першого погляду.
             </p>
             <div class="skills">
-                <span class="skill-badge">HTML5</span>
-                <span class="skill-badge">CSS3</span>
-                <span class="skill-badge">JavaScript</span>
-                <span class="skill-badge">Python</span>
-                <span class="skill-badge">UI/UX Design</span>
+                <span class="skill-badge">HTML5 / CSS3</span>
+                <span class="skill-badge">JavaScript (ES6+)</span>
+                <span class="skill-badge">Python Core</span>
+                <span class="skill-badge">Cyber Design</span>
+                <span class="skill-badge">Glassmorphism</span>
+                <span class="skill-badge">Responsive Architecture</span>
             </div>
         </div>
     </section>
 
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title reveal" style="text-align: center;">Проекти</h2>
+            <h2 class="section-title reveal"><span>02.</span> Мої роботи</h2>
+            
             <div class="project-grid">
-                
-                <!-- Карточка 1 -->
                 <div class="project-card reveal">
                     <div class="project-img-wrapper">
-                        <img src="https://picsum.photos/600/400?random=1" alt="Сайт-візитка прев'ю" class="project-img">
+                        <img src="https://picsum.photos/600/400?random=11" alt="Прев'ю Лендингу" class="project-img">
                     </div>
                     <div class="project-info">
-                        <h3>Сайт-візитка</h3>
-                        <p>Адаптивний лендинг для локального бізнесу із сучасним дизайном та високою швидкістю завантаження.</p>
+                        <h3>Premium Landing Space</h3>
+                        <p>Ультра-адаптивний бізнес-інтерфейс з неймовірною швидкістю відгуку та чистою структурою коду.</p>
                         <div>
-                            <a href="https://codepen.io/Margarita-the-solid/pen/qEadERd" target="_blank" class="btn" style="padding: 8px 20px; font-size: 14px;">Докладніше</a>
+                            <a href="https://codepen.io/Margarita-the-solid/pen/qEadERd" target="_blank" class="btn btn-sm">CodePen Link</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Карточка 2 -->
                 <div class="project-card reveal">
                     <div class="project-img-wrapper">
-                        <img src="https://picsum.photos/600/400?random=2" alt="Анімації прев'ю" class="project-img">
+                        <img src="https://picsum.photos/600/400?random=12" alt="Прев'ю Анімації" class="project-img">
                     </div>
                     <div class="project-info">
-                        <h3>Анімації для сайтів</h3>
-                        <p>Інтерфейс з динамічною анімацією на чистому JS.</p>
+                        <h3>Interactive JS Motion</h3>
+                        <p>Складна кінетична анімація, розроблена повністю на чистій логіці мови JavaScript.</p>
                         <div>
-                            <a href="https://codepen.io/VoXelo/pen/VYKMNwE" target="_blank" class="btn" style="padding: 8px 20px; font-size: 14px;">Докладніше</a>
+                            <a href="https://codepen.io/VoXelo/pen/VYKMNwE" target="_blank" class="btn btn-sm">CodePen Link</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Карточка 3 -->
                 <div class="project-card reveal">
                     <div class="project-img-wrapper">
-                        <img src="https://picsum.photos/600/400?random=3" alt="Світіння екрану прев'ю" class="project-img">
+                        <img src="https://picsum.photos/600/400?random=13" alt="Прев'ю Екрану" class="project-img">
                     </div>
                     <div class="project-info">
-                        <h3>Анімація світіння монітора</h3>
-                        <p>Інтерфейс з динамічним світінням на чистому HTML, CSS та JS.</p>
+                        <h3>Neon Monitor Glow</h3>
+                        <p>Дослідження світлових ефектів та імітація неонового випромінювання за допомогою CSS матриць.</p>
                         <div>
-                            <a href="https://codepen.io/toi-nagasawa/pen/OPRBwOd" target="_blank" class="btn" style="padding: 8px 20px; font-size: 14px;">Докладніше</a>
+                            <a href="https://codepen.io/toi-nagasawa/pen/OPRBwOd" target="_blank" class="btn btn-sm">CodePen Link</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Карточка 4 -->
                 <div class="project-card reveal">
                     <div class="project-img-wrapper">
-                        <img src="https://picsum.photos/600/400?random=4" alt="Гра аерохокей прев'ю" class="project-img">
+                        <img src="https://picsum.photos/600/400?random=14" alt="Прев'ю Гри" class="project-img">
                     </div>
                     <div class="project-info">
-                        <h3>Гра на HTML/CSS/JS</h3>
-                        <p>Гра про аерохокей з великим та цікавим функціоналом.</p>
+                        <h3>Cyber Air Hockey</h3>
+                        <p>Повноцінна браузерна гра з прорахованою фізикою ударів та штучним інтелектом суперника.</p>
                         <div>
-                            <a href="https://codepen.io/matt-cannon/pen/yyVLNNj" target="_blank" class="btn" style="padding: 8px 20px; font-size: 14px;">Докладніше</a>
+                            <a href="https://codepen.io/matt-cannon/pen/yyVLNNj" target="_blank" class="btn btn-sm">CodePen Link</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Карточка 5 -->
                 <div class="project-card reveal">
                     <div class="project-img-wrapper">
-                        <img src="https://picsum.photos/600/400?random=5" alt="Анімація з піском прев'ю" class="project-img">
+                        <img src="https://picsum.photos/600/400?random=15" alt="Прев'ю Піску" class="project-img">
                     </div>
                     <div class="project-info">
-                        <h3>Анімація з привітанням</h3>
-                        <p>Анімація з привітанням, яке реалістично збирається з піску на пляжі.</p>
+                        <h3>Sand Text Physics</h3>
+                        <p>Генеративна система частинок, яка реалістично симулює піщані дюни та формування тексту.</p>
                         <div>
-                            <a href="https://codepen.io/dustindwayne/pen/qEqzrzo" target="_blank" class="btn" style="padding: 8px 20px; font-size: 14px;">Докладніше</a>
+                            <a href="https://codepen.io/dustindwayne/pen/qEqzrzo" target="_blank" class="btn btn-sm">CodePen Link</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Карточка 6 -->
                 <div class="project-card reveal">
                     <div class="project-img-wrapper">
-                        <img src="https://picsum.photos/600/400?random=6" alt="Зміна дня і ночі прев'ю" class="project-img">
+                        <img src="https://picsum.photos/600/400?random=16" alt="Прев'ю Корабля" class="project-img">
                     </div>
                     <div class="project-info">
-                        <h3>Зміна дня і ночі</h3>
-                        <p>Анімація зі зміною дня і ночі на палубі корабля з чітко вираженими сонцем та місяцем.</p>
+                        <h3>Day/Night Cycle Engine</h3>
+                        <p>Динамічна система зміни часу доби на сцені з використанням складної векторної графіки.</p>
                         <div>
-                            <a href="https://codepen.io/HighFlyer910/pen/OPWgGMK" target="_blank" class="btn" style="padding: 8px 20px; font-size: 14px;">Докладніше</a>
+                            <a href="https://codepen.io/HighFlyer910/pen/OPWgGMK" target="_blank" class="btn btn-sm">CodePen Link</a>
                         </div>
                     </div>
                 </div>
-
-            </div> <!-- Закрили project-grid -->
-        </div> <!-- Закрили container -->
+            </div>
+        </div>
     </section>
 
     <section id="contact" class="contact reveal">
         <div class="container">
-            <h2 class="section-title" style="color: white;">Контакти</h2>
-            <p>Буду радий обговорити ваші ідеї та проекти. Напишіть мені у Telegram / Viber / WhatsApp за номером +380-50-253-09-64</p>
-            <a href="mailto:karadzelipavel6@gmail.com" class="btn">Написати на email</a>
+            <h2 class="section-title"><span>03.</span> Наші Зв'язки</h2>
+            
+            <div class="contact-layout">
+                <div class="contact-info-side">
+                    <p>Маєте цікаву ідею, проект або пропозицію щодо співпраці? Напишіть мені прямо зараз. Я завжди на зв'язку.</p>
+                    
+                    <div class="contact-method">
+                        <span>Телефон & Месенджери</span>
+                        +380-50-253-09-64
+                    </div>
+                    
+                    <div class="contact-method">
+                        <span>Електронна пошта</span>
+                        karadzelipavel6@gmail.com
+                    </div>
+                    
+                    <div class="social-icons">
+                        <a href="https://t.me" target="_blank" class="social-icon"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="viber://chat?number=%2B380502530964" class="social-icon"><i class="fab fa-viber"></i></a>
+                        <a href="https://wa.me/380502530964" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:karadzelipavel6@gmail.com" class="social-icon"><i class="far fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Ваша інтегрована форма (Web3Forms) -->
+                <form id="form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Ваше ім'я" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Ваш Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Опишіть ваше завдання..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit">
+                        Надіслати повідомлення
+                    </button>
+                </form>
+            </div>
         </div>
     </section>
 
+    <!-- Преміум Попапи -->
+    <div id="result-modal" class="modal">
+        <div class="modal-content">
+            <div id="modal-icon" class="modal-icon"></div>
+            <div id="modal-title" class="modal-title"></div>
+            <div id="modal-text" class="modal-text"></div>
+            <button onclick="closeModal()" class="btn btn-modal-close">Закрити вікно</button>
+        </div>
+    </div>
+
     <footer>
         <div class="container">
-            <p>&copy; 2026 Portfolio. Всі права захищено.</p>
+            <p>&copy; 2026 PAVLO.DEV. Усі права захищено. Створено з турботою.</p>
         </div>
     </footer>
 
+    <!-- Підключення зовнішнього скрипту -->
     <script src="script.js"></script>
-    <script src="./js/script.js"></script>
 </body>
 </html>
