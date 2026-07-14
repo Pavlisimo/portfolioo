@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Павло | Warm Premium Portfolio</title>
-    <!-- Іконки FontAwesome -->
+    
+    <!-- Підключення іконок Font Awesome для соцмереж та модальних вікон -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Підключення зовнішніх стилів -->
+    
+    <!-- Підключення зовнішніх стилів CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -58,7 +60,7 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title reveal"><span>02.</span> Мої роботи</h2>
-            
+             
             <div class="project-grid">
                 <div class="project-card reveal">
                     <div class="project-img-wrapper">
@@ -144,21 +146,21 @@
     <section id="contact" class="contact reveal">
         <div class="container">
             <h2 class="section-title"><span>03.</span> Наші Зв'язки</h2>
-            
+             
             <div class="contact-layout">
                 <div class="contact-info-side">
                     <p>Маєте цікаву ідею, проект або пропозицію щодо співпраці? Напишіть мені прямо зараз. Я завжди на зв'язку.</p>
-                    
+                     
                     <div class="contact-method">
                         <span>Телефон & Месенджери</span>
                         +380-50-253-09-64
                     </div>
-                    
+                     
                     <div class="contact-method">
                         <span>Електронна пошта</span>
                         karadzelipavel6@gmail.com
                     </div>
-                    
+                     
                     <div class="social-icons">
                         <a href="https://t.me" target="_blank" class="social-icon"><i class="fab fa-telegram-plane"></i></a>
                         <a href="viber://chat?number=%2B380502530964" class="social-icon"><i class="fab fa-viber"></i></a>
@@ -167,7 +169,7 @@
                     </div>
                 </div>
 
-                <!-- Ваша інтегрована форма (Web3Forms) -->
+                <!-- Інтегрована форма (Web3Forms) -->
                 <form id="form" class="contact-form">
                     <div class="form-group">
                         <input type="text" name="name" placeholder="Ваше ім'я" required>
@@ -192,7 +194,7 @@
             <div id="modal-icon" class="modal-icon"></div>
             <div id="modal-title" class="modal-title"></div>
             <div id="modal-text" class="modal-text"></div>
-            <button onclick="closeModal()" class="btn btn-modal-close">Закрити вікно</button>
+            <button id="close-modal-btn" class="btn btn-modal-close">Закрити вікно</button>
         </div>
     </div>
 
@@ -202,7 +204,7 @@
         </div>
     </footer>
 
-    <!-- Підключення зовнішнього скрипту -->
-    <script src="script.js"></script>
+    <!-- Підключення зовнішнього JS (defer гарантує завантаження після HTML) -->
+    <script src="script.js" defer></script>
 </body>
 </html>
