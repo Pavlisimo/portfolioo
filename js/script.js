@@ -19,11 +19,14 @@ interactiveElements.forEach(el => {
 // 2. Скрол Навігації та ScrollSpy
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.nav-link');
+const header = document.getElementById('header');
 
 window.addEventListener('scroll', () => {
-    const header = document.getElementById('header');
-    if (window.scrollY > 50) header.classList.add('scrolled');
-    else header.classList.remove('scrolled');
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
 
     let current = '';
     sections.forEach(section => {
@@ -79,10 +82,11 @@ document.querySelectorAll('.project-card').forEach(card => {
     });
 });
 
-// 5. Ваша інтегрована логіка відправки листа (Web3Forms API)
+// 5. Логіка відправки листа (Web3Forms API) та робота з Модальним вікном
 const form = document.getElementById('form');
 const submitBtn = form.querySelector('button[type="submit"]');
 const modal = document.getElementById('result-modal');
+const closeModalBtn = document.getElementById('close-modal-btn');
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -131,3 +135,13 @@ function showModal(type, title, text) {
 function closeModal() {
     modal.classList.remove('open');
 }
+
+// Подія для кнопки закриття модального вікна
+closeModalBtn.addEventListener('click', closeModal);
+
+// Закриття модального вікна при кліку за межами контенту
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        closeModal();
+    }
+});
